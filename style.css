@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     font-size: 90%;
     overflow-x: hidden;
@@ -1283,6 +1287,11 @@ footer .foot-content p{
     .home-slide .slide-anime-title{
         font-size: 22px;
     }
+    #ranking{
+        grid-template-columns: repeat(auto-fit , minmax(18rem , 1fr));
+        gap: 20px;
+        padding: 30px 10px;
+    }
     .list-box .list-content ul{
         gap: 15px 5px;
     }
@@ -1295,6 +1304,12 @@ footer .foot-content p{
 }
 
 @media screen and (max-width: 576px){
+    header{
+        height: 60px;
+    }
+    nav .nav-left .left-1 a img{
+        width: 100px;
+    }
     nav .nav-right button{
         display: none;
     }
@@ -1310,6 +1325,43 @@ footer .foot-content p{
     .swiper-pagination{
         display: block;
         margin-right: 10px;
+    }
+    .recent-release-container .recent-header .type-links{
+        display: none;
+    }
+    .top-anime{
+        flex-basis: 22%;
+        margin: 30px 5px;
+    }
+    footer{
+        padding: 30px 5px;
+    }
+    #swiper-slide-1::before{
+        background: url(Images/carousel-mob-1.png) no-repeat center/cover;
+    }
+    #swiper-slide-2::before{
+        background: url(Images/carousel-mob-2jpg) no-repeat center/cover;
+    }
+    #swiper-slide-3::before{
+        background: url(Images/carousel-mob-3.png) no-repeat center/cover;
+    }
+    #swiper-slide-4::before{
+        background: url(Images/carousel-mob-4.jpg) no-repeat center/cover;
+    }
+    #swiper-slide-5::before{
+        background: url(Images/carousel-mob-5.jpg) no-repeat center/cover;
+    }
+    #swiper-slide-6::before{
+        background: url(Images/carousel-mob-6.jpeg) no-repeat center/cover;
+    }
+    #swiper-slide-7::before{
+        background: url(Images/carousel-mob-7.jpg) no-repeat center/cover;
+    }
+    #swiper-slide-8::before{
+        background: url(Images/carousel-mob-8.jpg) no-repeat center/cover;
+    }
+    #swiper-slide-9::before{
+        background: url(Images/carousel-mob-9.jpg) no-repeat center/cover;
     }
 }
 
